@@ -1,8 +1,119 @@
 <style>
-body, html {
-    margin: 0;
+div {
+    animation: colorRotate 0.1s linear 0s infinite;
 }
+
+span {
+    animation: colorRotate 0.1s linear 0s infinite;
+}
+
+body {
+    animation: colorRotate 0.1s linear 0s infinite;
+}
+
+@keyframes colorRotate {
+    from {
+        color: rgb(0, 255, 0);
+        background-color: rgb(255, 255, 0);
+    }
+    16.6% {
+        color: rgb(255, 255, 0);
+        background-color: rgb(255, 255, 255);
+
+    }
+    55% {
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 0, 255);
+
+    }
+    98% {
+        color: rgb(255, 0, 255);
+        background-color: rgb(0, 255, 255);
+    }
+    99% {
+        color: rgb(0, 255, 255);
+        background-color: rgb(0, 255, 0);
+    }
+}
+@-webkit-keyframes rotate {
+      0% { -webkit-transform: rotate3d(1, 1, 1, 0deg); }
+    100% { -webkit-transform: rotate3d(1, 1, 1, 360deg); }
+}
+@-moz-keyframes rotate {
+      0% { -moz-transform: rotate3d(1, 1, 1, 0deg); }
+    100% { -moz-transform: rotate3d(1, 1, 1, 360deg); }
+}
+@keyframes rotate {
+      0% { transform: rotate3d(1, 1, 1, 0deg); }
+    100% { transform: rotate3d(1, 1, 1, 360deg); }
+}
+
+/*@-ms-keyframes wiggle{0%{-ms-transform:rotate(360deg);}50%{-ms-transform:rotate(-360deg);}100%{-ms-transform:rotate(360deg);}}
+@-moz-keyframes wiggle{0%{-moz-transform:rotate(360deg);}50%{-moz-transform:rotate(-360deg);}100%{-moz-transform:rotate(360deg);}}
+@-webkit-keyframes wiggle{0%{-webkit-transform:rotate(360deg);}50%{-webkit-transform:rotate(-360deg);}100%{-webkit-transform:rotate(360deg);}}
+@keyframes wiggle{0%{transform:rotate(360deg);}50%{transform:rotate(-360deg);}100%{transform:rotate(360deg);}}
+
+@keyframes oops{
+	from{
+		margin-left: 300%;
+		width: 800%;
+	}
+	
+	to{
+		margin-left: 50%;
+		width: 50%;
+	}
+	50%{
+		margin-left: 800%;
+		width: 1337%;
+	}
+}
+@-ms-keyframes oops{
+	from{
+		margin-left: 300%;
+		width: 800%;
+	}
+	
+	to{
+		margin-left: 50%;
+		width: 50%;
+	}
+	50%{
+		margin-left: 800%;
+		width: 1337%;
+	}
+}
+@-webkit-keyframes oops{
+	from{
+		margin-left: 300%;
+		width: 800%;
+	}
+	
+	to{
+		margin-left: 50%;
+		width: 50%;
+	}
+	50%{
+		margin-left: 800%;
+		width: 1337%;
+	}
+}
+@-moz-keyframes oops{
+	from{
+		margin-left: 300%;
+		width: 800%;
+	}
+	
+	to{
+		margin-left: 50%;
+		width: 50%;
+	}
+	50%{
+		margin-left: 800%;
+		width: 1337%;
+	}
+}*/
+div :hover{-ms-animation:wiggle .3s 2;-moz-animation:wiggle .3s 2;-webkit-animation:wiggle .3s 2;animation:wiggle .3s 2;}
+div :hover{-ms-animation:oops .7s 2; -moz-animation:oops .7s 2; -webkit-animation:oops .7s 2;animation:oops .7s 2;}
 </style>
-<body bgcolor=#000>
-<center><img src="s.png" style="width:auto;height:100vh"></center>
-</body>
+<center><img src="s.png"></center>
